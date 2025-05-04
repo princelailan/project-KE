@@ -1,23 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Kenya Explorer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Kenya Explorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body class="font-sans text-gray-800">
-    <div id="particles-js" class="fixed inset-0 z-0"></div>
-    <div class="parallax-bg fixed inset-0 z-0"></div>
-    <nav class="sidebar bg-black text-white h-screen w-16 fixed top-0 left-0 flex flex-col items-center py-8 z-20">
-        <a href="index.html" class="mb-8"><img src="https://via.placeholder.com/40?text=Logo" alt="Logo" class="w-10"></a>
-        <a href="index.html" class="nav-link mb-4" title="Home"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L2 8v10h6v-6h4v6h6V8l-8-6z"/></svg></a>
-        <a href="history.html" class="nav-link mb-4" title="History"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm-1-9h2v5h-2zm0 6h2v2h-2z"/></svg></a>
-        <a href="medical.html" class="nav-link mb-4" title="Medical"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 00-8 8 8 8 0 008 8 8 8 0 008-8 8 8 0 00-8-8zm-1 11H7v-2h2v-2h2v2h2v2h-2v2H9v-2z"/></svg></a>
-        <a href="adventure.html" class="nav-link mb-4" title="Adventure"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M12 2l8 8-8 8-1.5-1.5L16 11H4V9h12l-5.5-5.5L12 2z"/></svg></a>
-        <a href="tech.html" class="nav-link mb-4" title="Tech"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8
+
+  <!-- Particles Background -->
+  <div id="particles-js" class="fixed inset-0 z-0"></div>
+  <div class="parallax-bg fixed inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1606406053613-3be2c5a2d705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80'); opacity: 0.5;"></div>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar bg-black text-white h-screen w-16 fixed top-0 left-0 flex flex-col items-center py-8 z-20">
+    <a href="index.html" class="mb-8">
+      <img src="https://via.placeholder.com/40?text=Logo" alt="Logo" class="w-10">
+    </a>
+    <a href="index.html" class="nav-link mb-4" title="Home">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L2 8v10h6v-6h4v6h6V8l-8-6z"/></svg>
+    </a>
+    <a href="history.html" class="nav-link mb-4" title="History">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm-1-9h2v5h-2zm0 6h2v2h-2z"/></svg>
+    </a>
+    <a href="medical.html" class="nav-link mb-4" title="Medical">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 00-8 8 8 8 0 008 8 8 8 0 008-8 8 8 0 00-8-8zm-1 11H7v-2h2v-2h2v2h2v2h-2v2H9v-2z"/></svg>
+    </a>
+    <a href="adventure.html" class="nav-link mb-4" title="Adventure">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M12 2l8 8-8 8-1.5-1.5L16 11H4V9h12l-5.5-5.5L12 2z"/></svg>
+    </a>
+    <a href="tech.html" class="nav-link mb-4" title="Tech">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8"/></svg>
+    </a>
+  </nav>
+
+  <!-- Contact Content -->
+  <main class="ml-20 p-8 relative z-10 bg-white bg-opacity-90 backdrop-blur-sm min-h-screen">
+    <h1 class="text-4xl font-bold mb-6 text-indigo-700">Contact Us</h1>
+    
+    <div class="text-lg space-y-4">
+      <p>
+        📧 Email: 
+        <a href="mailto:jesuspromisesmedia@gmail.com" class="text-blue-700 underline">jesuspromisesmedia@gmail.com</a><br>
+        <a href="mailto:jpmnetworks@gmail.com" class="text-blue-700 underline">jpmnetworks@gmail.com</a>
+      </p>
+      <p>
+        📞 Phone: 
+        <a href="tel:0100585264" class="text-blue-700 underline">0100585264</a>, 
+        <a href="tel:0107103049" class="text-blue-700 underline">0107103049</a>
+      </p>
+
+      <div class="mt-6">
+        <p class="font-semibold mb-2">Follow us on Social Media:</p>
+        <div class="flex space-x-4">
+          <a href="https://facebook.com" target="_blank" title="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-8 h-8">
+          </a>
+          <a href="https://instagram.com" target="_blank" title="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="w-8 h-8">
+          </a>
+          <a href="https://twitter.com" target="_blank" title="Twitter">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-8 h-8">
+          </a>
+          <a href="https://wa.me/254100585264" target="_blank" title="WhatsApp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-8 h-8">
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js loaded.');
+    });
+
+    VanillaTilt.init(document.querySelectorAll(".nav-link"), {
+      max: 25,
+      speed: 400
+    });
+
+    // Launch confetti on page load
+    window.onload = () => {
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+</body>
+</html>
