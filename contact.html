@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Kenya Explorer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title>Contact Me - Kenya Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add any other stylesheets or links here -->
 </head>
-<body class="font-sans text-gray-800">
-    <!-- Background Image for Hero Section -->
+<body class="bg-white font-sans text-gray-800">
+    <!-- Navigation Bar -->
+    <header class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <a href="index.html" class="text-2xl font-bold text-white">Kenya Explorer</a>
+            <div class="space-x-6">
+                <a href="index.html" class="text-white hover:text-gray-300">Home</a>
+                <a href="about.html" class="text-white hover:text-gray-300">About</a>
+                <a href="portfolio.html" class="text-white hover:text-gray-300">Portfolio</a>
+                <a href="contact.html" class="text-white hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image -->
     <section class="relative bg-cover bg-center" style="background-image: url('path-to-your-image.jpg'); height: 100vh;">
         <div class="absolute inset-0 bg-black opacity-40"></div>
         <div class="container mx-auto text-center text-white relative z-10 pt-32">
@@ -21,66 +30,28 @@
         </div>
     </section>
 
-    <!-- Personal Details Section -->
-    <section class="container mx-auto py-12 px-6 text-center">
-        <h3 class="text-3xl font-semibold mb-4">About Me</h3>
-        <p class="text-lg mb-4">Hi! I'm <span class="font-bold text-red-600">Joseph Onyango</span>, a passionate developer and creative mind based in Nairobi. I specialize in web development and have a deep love for design and technology.</p>
-        <p class="text-lg mb-6">I enjoy arranging flowers, watercolor painting, baking, and curating design books. When I’m not coding, I’m exploring new ideas for projects and learning about the latest trends in tech.</p>
-
-        <div class="social-links flex justify-center space-x-6 mb-8">
-            <a href="https://www.linkedin.com/in/joseph-onyango/" target="_blank" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/princelailan" target="_blank" class="text-gray-800 hover:text-gray-600 text-2xl"><i class="fab fa-github"></i> GitHub</a>
-            <a href="mailto:joseph.onyango@example.com" class="text-green-600 hover:text-green-800 text-2xl"><i class="fas fa-envelope"></i> Email</a>
-        </div>
-    </section>
-
-    <!-- Contact Details Section -->
+    <!-- Contact Form and Details Section -->
     <section class="container mx-auto py-12 px-6">
         <h3 class="text-3xl font-semibold text-center mb-6">Contact Me</h3>
         <p class="text-lg text-center mb-4">Feel free to reach out to me for any inquiries or collaborations.</p>
 
-        <div class="text-center">
+        <div class="text-center mb-8">
             <p class="text-xl mb-2"><strong>Email:</strong> <a href="mailto:jesuspromisesmedia@gmail.com" class="text-blue-600 hover:text-blue-800">jesuspromisesmedia@gmail.com</a></p>
             <p class="text-xl mb-2"><strong>Phone:</strong> +254 101 710 049</p>
             <p class="text-xl mb-2"><strong>Phone:</strong> +254 100 585 264</p>
             <p class="text-xl mb-2"><strong>Location:</strong> Nairobi, Kenya</p>
         </div>
+
+        <!-- Back Button -->
+        <div class="text-center">
+            <a href="index.html" class="bg-red-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-red-700 transition-colors">Back to Home</a>
+        </div>
     </section>
 
-    <!-- Contact Form -->
-    <main class="container mx-auto py-12 px-6">
-        <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
-            <h3 class="text-3xl font-semibold text-center mb-6">Contact Form</h3>
-            <form action="#" method="POST">
-                <div class="grid grid-cols-1 gap-6">
-                    <div class="mb-4">
-                        <label for="name" class="block text-lg font-semibold">Your Name</label>
-                        <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-md" placeholder="Enter your name" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="email" class="block text-lg font-semibold">Your Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-md" placeholder="Enter your email" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="message" class="block text-lg font-semibold">Your Message</label>
-                        <textarea id="message" name="message" rows="6" class="w-full p-4 border border-gray-300 rounded-md" placeholder="Type your message" required></textarea>
-                    </div>
-
-                    <div class="text-center">
-                        <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-red-700 transition-colors">Send Message</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </main>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="bg-black text-white py-4 text-center">
         <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
 </body>
 </html>
