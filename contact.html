@@ -12,49 +12,49 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body class="font-sans text-gray-800">
-    <div id="particles-js" class="fixed inset-0 z-0"></div>
-    <div class="parallax-bg fixed inset-0 z-0"></div>
-    <nav class="sidebar bg-black text-white h-screen w-16 fixed top-0 left-0 flex flex-col items-center py-8 z-20">
-        <a href="index.html" class="mb-8"><span class="logo text-3xl font-bold text-red-600 border-2 border-green-600 bg-black p-1">K</span></a>
-        <a href="index.html" class="nav-link mb-4" title="Home"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg></a>
-        <a href="history.html" class="nav-link mb-4" title="History"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm-1-9h2v5h-2zm0 6h2v2h-2z"/></svg></a>
-        <a href="medical.html" class="nav-link mb-4" title="Medical"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 00-8 8 8 8 0 008 8 8 8 0 008-8 8 8 0 00-8-8zm-1 11H7v-2h2v-2h2v2h2v2h-2v2H9v-2z"/></svg></a>
-        <a href="adventure.html" class="nav-link mb-4" title="Adventure"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg></a>
-        <a href="tech.html" class="nav-link mb-4" title="Tech"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M13.5 2c-1.47 0-2.87.57-3.91 1.59L9 4.17l-.59-.58A5.5 5.5 0 002 8.5c0 1.47.57 2.87 1.59 3.91L9 17.83l5.41-5.42A5.5 5.5 0 0018 8.5a5.5 5.5 0 00-4.5-5.48z"/></svg></a>
-        <a href="culture.html" class="nav-link mb-4" title="Culture"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M13 7H7v6h6V7zm-3 2a1 1 0 110 2 1 1 0 010-2zm5-2h2v6h-2V7zm-8 0H5v6h2V7z"/></svg></a>
-        <a href="wildlife.html" class="nav-link mb-4" title="Wildlife"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4zm7-7a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1V5zm-2 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg></a>
-        <a href="education.html" class="nav-link mb-4" title="Education"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4v12h12V4H4zm2 2h8v2H6V6zm0 4h8v2H6v-2zm0 4h4v2H6v-2z"/></svg></a>
-        <a href="future.html" class="nav-link mb-4" title="Future"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M8 2v4l-4 2 4 2v4l6-6-6-6zm2 12v-4l4-2-4-2v-4l-6 6 6 6z"/></svg></a>
-        <a href="contact.html" class="nav-link mb-4 active" title="Contact"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 3h10v2H5V8zm0 4h7v2H5v-2z"/></svg></a>
-    </nav>
-    <main class="container mx-auto py-8 pl-20 relative z-10">
-        <section class="hero relative bg-green-600 text-white p-12 rounded-lg mb-8 overflow-hidden">
-            <div class="hero-overlay absolute inset-0 bg-black opacity-20"></div>
-            <h2 class="text-5xl font-bold mb-4 relative z-10">Get in Touch with Us!</h2>
-            <p class="text-lg relative z-10">We'd love to hear from you. Drop us a message!</p>
-        </section>
-        <section class="bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-semibold mb-4">Contact Form</h3>
+    <!-- Background Image for Hero Section -->
+    <section class="relative bg-cover bg-center" style="background-image: url('path-to-your-image.jpg'); height: 100vh;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto text-center text-white relative z-10 pt-32">
+            <h2 class="text-5xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-xl mb-8">We would love to hear from you! Send us a message and we'll get back to you soon.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <main class="container mx-auto py-12 px-6">
+        <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
+            <h3 class="text-3xl font-semibold text-center mb-6">Contact Form</h3>
             <form action="#" method="POST">
-                <div class="mb-4">
-                    <label for="name" class="block text-lg font-semibold">Your Name</label>
-                    <input type="text" id="name" name="name" class="w-full p-3 mt-2 border-2 border-gray-300 rounded-md" placeholder="Enter your name" required>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="mb-4">
+                        <label for="name" class="block text-lg font-semibold">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-md" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="block text-lg font-semibold">Your Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-md" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="block text-lg font-semibold">Your Message</label>
+                        <textarea id="message" name="message" rows="6" class="w-full p-4 border border-gray-300 rounded-md" placeholder="Type your message" required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-red-700 transition-colors">Send Message</button>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-lg font-semibold">Your Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-3 mt-2 border-2 border-gray-300 rounded-md" placeholder="Enter your email" required>
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-lg font-semibold">Your Message</label>
-                    <textarea id="message" name="message" rows="5" class="w-full p-3 mt-2 border-2 border-gray-300 rounded-md" placeholder="Type your message" required></textarea>
-                </div>
-                <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-full font-bold hover:bg-red-700 transition-colors">Send Message</button>
             </form>
-        </section>
+        </div>
     </main>
+
+    <!-- Footer -->
     <footer class="bg-black text-white py-4 text-center">
         <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
