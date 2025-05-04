@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="font-sans text-gray-800">
     <div id="particles-js" class="fixed inset-0 z-0"></div>
@@ -31,27 +30,26 @@
     <main class="container mx-auto py-8 pl-20 relative z-10">
         <section class="hero relative bg-green-600 text-white p-12 rounded-lg mb-8 overflow-hidden">
             <div class="hero-overlay absolute inset-0 bg-black opacity-20"></div>
-            <h2 class="text-5xl font-bold mb-4 relative z-10">Kenya’s Wildlife</h2>
-            <p class="text-lg relative z-10">Hover for sounds, click for facts!</p>
+            <h2 class="text-5xl font-bold mb-4 relative z-10">Wildlife in Kenya</h2>
+            <p class="text-lg relative z-10">Discover Kenya’s biodiversity with interactive surprises!</p>
         </section>
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable sound-card" data-tilt data-id="wildlife1" data-sound="lion">
-                <h3 class="text-xl font-semibold">The Big Five</h3>
-                <p class="expandable hidden">Lion, elephant, buffalo, leopard, rhino. <span class="easter-egg hidden">Simba ni mfalme!</span></p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="wildlife1">
+                <h3 class="text-xl font-semibold">Big Five</h3>
+                <p class="expandable hidden">Lions, elephants, rhinos, leopards, and buffaloes thrive in Kenya’s parks. <span class="easter-egg hidden">Wanyama ni hazina!</span></p>
+                <a href="https://www.kws.go.ke/content/big-five" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
-            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable sound-card" data-tilt data-id="wildlife2" data-sound="wildebeest">
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable easter-egg-flag" data-tilt data-id="wildlife2">
                 <h3 class="text-xl font-semibold">Great Migration</h3>
-                <p class="expandable hidden">1.5M wildebeest migrate annually.</p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+                <p class="expandable hidden">Millions of wildebeest migrate annually in the Maasai Mara.</p>
+                <a href="https://www.maasaimara.com/great-migration" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
-            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable sound-card" data-tilt data-id="wildlife3" data-sound="zebra">
-                <h3 class="text-xl font-semibold">Grevy’s Zebra</h3>
-                <p class="expandable hidden">Fewer than 2,000 remain, conserved in Samburu.</p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="wildlife3">
+                <h3 class="text-xl font-semibold">Tsavo National Park</h3>
+                <p>Home to diverse wildlife and the famous man-eating lions.</p>
+                <a href="https://www.kws.go.ke/content/tsavo-national-park" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
         </section>
-        <canvas id="wildlife-chart" class="mt-8 rounded-lg shadow-lg"></canvas>
     </main>
     <footer class="bg-black text-white text-center py-4 relative z-10">
         <p>© 2025 Kenya Explorer. Karibu Tena!</p>
