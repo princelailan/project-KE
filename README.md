@@ -4,6 +4,7 @@ Kenya Explorer
 A modern, interactive website showcasing Kenya’s diverse aspects, including education, history, medical breakthroughs, adventure, tech, culture, wildlife, and future visions.
 Project Structure
 kenya-explorer/
+
 ├── index.html
 ├── history.html
 ├── medical.html
