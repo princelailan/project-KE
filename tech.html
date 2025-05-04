@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="font-sans text-gray-800">
     <div id="particles-js" class="fixed inset-0 z-0"></div>
@@ -31,27 +30,26 @@
     <main class="container mx-auto py-8 pl-20 relative z-10">
         <section class="hero relative bg-green-600 text-white p-12 rounded-lg mb-8 overflow-hidden">
             <div class="hero-overlay absolute inset-0 bg-black opacity-20"></div>
-            <h2 class="text-5xl font-bold mb-4 relative z-10">Tech Breakthroughs</h2>
-            <p class="text-lg relative z-10">Discover Kenya’s tech future!</p>
+            <h2 class="text-5xl font-bold mb-4 relative z-10">Tech in Kenya</h2>
+            <p class="text-lg relative z-10">Discover Kenya’s tech revolution with interactive surprises!</p>
         </section>
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="tech1">
-                <h3 class="text-xl font-semibold">Blockchain Land Records</h3>
-                <p class="expandable hidden">Secure land titles with blockchain to prevent fraud.</p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+                <h3 class="text-xl font-semibold">M-Pesa</h3>
+                <p class="expandable hidden">Mobile money platform transformed financial inclusion. <span class="easter-egg hidden">Pesa ni maisha!</span></p>
+                <a href="https://www.safaricom.co.ke/personal/m-pesa" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
-            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="tech2">
-                <h3 class="text-xl font-semibold">Green Energy</h3>
-                <p class="expandable hidden">Olkaria geothermal plants power 30% of Kenya.</p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
-            </article>
-            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable easter-egg-flag" data-tilt data-id="tech3">
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable easter-egg-flag" data-tilt data-id="tech2">
                 <h3 class="text-xl font-semibold">Konza Technopolis</h3>
-                <p class="expandable hidden">Africa’s Silicon Savannah, set for 2030.</p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+                <p class="expandable hidden">A smart city project to boost tech innovation.</p>
+                <a href="https://www.konza.go.ke/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="tech3">
+                <h3 class="text-xl font-semibold">iHub</h3>
+                <p>Nairobi’s tech hub fosters startups and innovation.</p>
+                <a href="https://ihub.co.ke/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
         </section>
-        <canvas id="tech-chart" class="mt-8 rounded-lg shadow-lg"></canvas>
     </main>
     <footer class="bg-black text-white text-center py-4 relative z-10">
         <p>© 2025 Kenya Explorer. Karibu Tena!</p>
