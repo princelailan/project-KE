@@ -6,7 +6,6 @@
   <title>Contact Me</title>
 
   <style>
-    /* Global Styles */
     * {
       margin: 0;
       padding: 0;
@@ -14,51 +13,57 @@
     }
 
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fff;
-      color: #333;
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background-color: #f4f4f4;
     }
 
-    /* Navbar Styles */
-    .navbar {
+    /* Sidebar styles */
+    .sidebar {
+      width: 220px;
       background-color: #333;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 30px 20px;
+      color: #fff;
+      flex-shrink: 0;
       position: sticky;
       top: 0;
-      z-index: 100;
+      height: 100vh;
     }
 
-    .navbar .brand a {
-      color: #fff;
-      font-size: 2rem;
-      text-decoration: none;
+    .sidebar h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
     }
 
-    .nav-list {
-      display: flex;
-      gap: 20px;
+    .nav-links {
       list-style: none;
     }
 
-    .nav-list li a {
+    .nav-links li {
+      margin: 15px 0;
+    }
+
+    .nav-links a {
       color: #fff;
       text-decoration: none;
-      padding: 10px;
+      font-size: 1rem;
+      transition: background 0.3s, padding 0.3s;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
     }
 
-    .nav-list li a:hover,
-    .nav-list li a.active {
+    .nav-links a:hover,
+    .nav-links a.active {
       background-color: #007bff;
-      border-radius: 5px;
+      padding-left: 20px;
     }
 
-    /* Contact Section */
-    .contact-container {
-      padding: 50px 20px;
-      text-align: center;
+    /* Main content */
+    .main-content {
+      flex: 1;
+      padding: 60px 40px;
     }
 
     .contact-info h2 {
@@ -85,48 +90,41 @@
       text-decoration: underline;
     }
 
-    .back-home .btn {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .back-home .btn:hover {
-      background-color: #0056b3;
-    }
-
     /* Footer */
     .footer {
       text-align: center;
       padding: 20px;
       background-color: #333;
       color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="brand">
-      <a href="index.html">Kenya Explorer</a>
-    </div>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <h2>Kenya Explorer</h2>
+    <ul class="nav-links">
+      <li><a href="README.md">README</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adventure.html">Adventure</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="future.html">Future</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="medical.html">Medical</a></li>
+      <li><a href="script.js">Script</a></li>
+      <li><a href="styles.css">Styles</a></li>
+      <li><a href="tech.html">Technology</a></li>
+      <li><a href="wildlife.html">Wildlife</a></li>
+    </ul>
+  </aside>
 
-  <!-- Contact Content -->
-  <section class="contact-container">
-    <div class="contact-info">
+  <!-- Main Contact Section -->
+  <main class="main-content">
+    <section class="contact-info">
       <h2>Contact Me</h2>
       <p>Feel free to reach out to me for any inquiries or collaborations.</p>
 
@@ -136,17 +134,12 @@
         <p><strong>Phone:</strong> +254 100 585 264</p>
         <p><strong>Location:</strong> Nairobi, Kenya</p>
       </div>
+    </section>
 
-      <div class="back-home">
-        <a href="index.html" class="btn">Back to Home</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
-  </footer>
+    <footer class="footer">
+      <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
+    </footer>
+  </main>
 
 </body>
 </html>
