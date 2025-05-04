@@ -1,54 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background-color: #333;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar .brand a {
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+
+    .nav-list {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-list li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .nav-list li a:hover,
+    .nav-list li a.active {
+      background-color: #007bff;
+      border-radius: 5px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-details {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-details a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    .back-home .btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .back-home .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
 </head>
 
-<body class="bg-white">
+<body>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="brand">
-            <a href="index.html">Kenya Explorer</a>
-        </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="brand">
+      <a href="index.html">Kenya Explorer</a>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Main Content Section -->
-    <section class="contact-container">
-        <div class="contact-info">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+  <!-- Contact Content -->
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me for any inquiries or collaborations.</p>
 
-            <div class="contact-details">
-                <p><strong>Email:</strong> <a href="mailto:jesuspromisesmedia@gmail.com">jesuspromisesmedia@gmail.com</a></p>
-                <p><strong>Phone:</strong> +254 101 710 049</p>
-                <p><strong>Phone:</strong> +254 100 585 264</p>
-                <p><strong>Location:</strong> Nairobi, Kenya</p>
-            </div>
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:jesuspromisesmedia@gmail.com">jesuspromisesmedia@gmail.com</a></p>
+        <p><strong>Phone:</strong> +254 101 710 049</p>
+        <p><strong>Phone:</strong> +254 100 585 264</p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+      </div>
 
-            <div class="back-home">
-                <a href="index.html" class="btn">Back to Home</a>
-            </div>
-        </div>
-    </section>
+      <div class="back-home">
+        <a href="index.html" class="btn">Back to Home</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
+  </footer>
 
 </body>
-
 </html>
