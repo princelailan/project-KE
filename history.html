@@ -30,24 +30,24 @@
     <main class="container mx-auto py-8 pl-20 relative z-10">
         <section class="hero relative bg-green-600 text-white p-12 rounded-lg mb-8 overflow-hidden">
             <div class="hero-overlay absolute inset-0 bg-black opacity-20"></div>
-            <h2 class="text-5xl font-bold mb-4 relative z-10">Kenyan History Timeline</h2>
-            <p class="text-lg relative z-10">Discover pivotal moments with surprises!</p>
+            <h2 class="text-5xl font-bold mb-4 relative z-10">History of Kenya</h2>
+            <p class="text-lg relative z-10">Uncover Kenya’s storied past with interactive surprises!</p>
         </section>
-        <section class="timeline relative">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="history1">
-                <h3 class="text-xl font-semibold">1952-1960: Mau Mau Uprising</h3>
-                <p class="expandable hidden">The Mau Mau fought for land and freedom, sparking independence movements. <span class="easter-egg hidden">Moto wa kuotea mbali!</span></p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+                <h3 class="text-xl font-semibold">Mau Mau Uprising</h3>
+                <p class="expandable hidden">The 1952-1960 rebellion was pivotal for Kenya’s independence. <span class="easter-egg hidden">Uhuru ni haki!</span></p>
+                <a href="https://www.nationalarchives.gov.uk/education/resources/mau-mau-rebellion/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
-            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="history2">
-                <h3 class="text-xl font-semibold">1963: Independence</h3>
-                <p class="expandable hidden">Kenya gained independence with Jomo Kenyatta as president.</p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable easter-egg-flag" data-tilt data-id="history2">
+                <h3 class="text-xl font-semibold">Independence Day</h3>
+                <p class="expandable hidden">Kenya gained independence from Britain on December 12, 1963.</p>
+                <a href="https://www.kenyaembassy.com/about-kenya/history/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
             <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="history3">
-                <h3 class="text-xl font-semibold">2010: New Constitution</h3>
-                <p class="expandable hidden">Introduced devolution, empowering 47 counties.</p>
-                <button class="expand-btn bg-red-600 text-white px-4 py-2 rounded">Expand</button>
+                <h3 class="text-xl font-semibold">Great Rift Valley</h3>
+                <p>Ancient geological formations shaped Kenya’s early human history.</p>
+                <a href="https://whc.unesco.org/en/list/1450/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
             </article>
         </section>
     </main>
