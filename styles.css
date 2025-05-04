@@ -1,0 +1,46 @@
+body {
+    background: #f0f0f0;
+    overflow-x: hidden;
+}
+.parallax-bg {
+    background: url('https://via.placeholder.com/1920x1080?text=Kenyan+Landscape') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.3;
+    transform: translateZ(0);
+}
+#particles-js {
+    background: transparent;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    color: #f56565;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: move;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.expandable {
+    display: none;
+}
+.expandable.show {
+    display: block;
+}
+.easter-egg {
+    color: #f56565;
+    font-style: italic;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+    }
+    main {
+        padding-left: 0;
+    }
+}
