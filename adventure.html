@@ -30,26 +30,25 @@
     <main class="container mx-auto py-8 pl-20 relative z-10">
         <section class="hero relative bg-green-600 text-white p-12 rounded-lg mb-8 overflow-hidden">
             <div class="hero-overlay absolute inset-0 bg-black opacity-20"></div>
-            <h2 class="text-5xl font-bold mb-4 relative z-10">Adventure Destinations</h2>
-            <p class="text-lg relative z-10">Click to explore Kenya’s wonders!</p>
+            <h2 class="text-5xl font-bold mb-4 relative z-10">Adventure in Kenya</h2>
+            <p class="text-lg relative z-10">Explore thrilling destinations with interactive surprises!</p>
         </section>
-        <section class="map relative bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold mb-4">Interactive Map</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="card bg-white p-4 rounded-lg shadow-lg tilt hotspot" data-tilt data-location="maasai-mara">
-                    <h4 class="text-lg font-semibold">Maasai Mara</h4>
-                    <p class="hidden hotspot-content">Home to the Great Migration and Big Five.</p>
-                </div>
-                <div class="card bg-white p-4 rounded-lg shadow-lg tilt hotspot" data-tilt data-location="amboseli">
-                    <h4 class="text-lg font-semibold">Amboseli</h4>
-                    <p class="hidden hotspot-content">Famous for Kilimanjaro views and elephants.</p>
-                </div>
-                <div class="card bg-white p-4 rounded-lg shadow-lg tilt hotspot easter-egg-flag" data-tilt data-location="lamu">
-                    <h4 class="text-lg font-semibold">Lamu</h4>
-                    <p class="hidden hotspot-content">UNESCO site with Swahili culture and beaches.</p>
-                </div>
-            </div>
-            <div id="map-content" class="mt-4 p-4 bg-gray-100 rounded-lg"></div>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="adventure1">
+                <h3 class="text-xl font-semibold">Maasai Mara</h3>
+                <p>Famous for the Great Migration and big five safaris.</p>
+                <a href="https://www.maasaimara.com/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable easter-egg-flag" data-tilt data-id="adventure2">
+                <h3 class="text-xl font-semibold">Mount Kenya</h3>
+                <p class="expandable hidden">Africa’s second-highest peak offers epic climbing routes. <span class="easter-egg hidden">Mlimani ni nguvu!</span></p>
+                <a href="https://www.kws.go.ke/content/mount-kenya-national-park" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="adventure3">
+                <h3 class="text-xl font-semibold">Lamu Island</h3>
+                <p>A UNESCO site with pristine beaches and Swahili culture.</p>
+                <a href="https://whc.unesco.org/en/list/1055/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
         </section>
     </main>
     <footer class="bg-black text-white text-center py-4 relative z-10">
