@@ -1,161 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Me</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fff;
-      color: #333;
-      display: flex;
-    }
-
-    /* Sidebar Navigation */
-    .sidebar {
-      width: 200px;
-      background-color: #222;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      padding-top: 30px;
-    }
-
-    .sidebar h2 {
-      color: white;
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.5rem;
-    }
-
-    .nav-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav-list li {
-      margin: 10px 0;
-    }
-
-    .nav-list a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      padding: 12px 20px;
-      transition: background 0.3s ease;
-    }
-
-    .nav-list a:hover,
-    .nav-list a.active {
-      background-color: #007bff;
-    }
-
-    /* Main Content */
-    .main-content {
-      margin-left: 200px;
-      padding: 40px 20px;
-      flex: 1;
-    }
-
-    .contact-info h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .contact-info p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    .contact-details {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
-
-    .contact-details a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .contact-details a:hover {
-      text-decoration: underline;
-    }
-
-    .back-home .btn {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .back-home .btn:hover {
-      background-color: #0056b3;
-    }
-
-    /* Footer */
-    .footer {
-      margin-left: 200px;
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kenya Explorer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
-
-<body>
-
-  <!-- Sidebar -->
-  <nav class="sidebar">
-    <h2>Explore KE</h2>
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="adventure.html">Adventure</a></li>
-      <li><a href="culture.html">Culture</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="future.html">Future</a></li>
-      <li><a href="history.html">History</a></li>
-      <li><a href="medical.html">Medical</a></li>
-      <li><a href="tech.html">Tech</a></li>
-      <li><a href="wildlife.html">Wildlife</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="contact-info">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out to me for any inquiries or collaborations.</p>
-
-      <div class="contact-details">
-        <p><strong>Email:</strong> <a href="mailto:jesuspromisesmedia@gmail.com">jesuspromisesmedia@gmail.com</a></p>
-        <p><strong>Phone:</strong> +254 101 710 049</p>
-        <p><strong>Phone:</strong> +254 100 585 264</p>
-        <p><strong>Location:</strong> Nairobi, Kenya</p>
-      </div>
-
-      <div class="back-home">
-        <a href="index.html" class="btn">Back to Home</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
-  </footer>
-
+<body class="font-sans text-gray-800">
+    <div id="particles-js" class="fixed inset-0 z-0"></div>
+    <div class="parallax-bg fixed inset-0 z-0"></div>
+    <nav class="sidebar bg-black text-white h-screen w-16 fixed top-0 left-0 flex flex-col items-center py-8 z-20">
+        <a href="index.html" class="mb-8"><span class="logo text-3xl font-bold text-red-600 border-2 border-green-600 bg-black p-1">K</span></a>
+        <a href="index.html" class="nav-link mb-4" title="Home"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg></a>
+        <a href="history.html" class="nav-link mb-4" title="History"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm-1-9h2v5h-2zm0 6h2v2h-2z"/></svg></a>
+        <a href="medical.html" class="nav-link mb-4" title="Medical"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 00-8 8 8 8 0 008 8 8 8 0 008-8 8 8 0 00-8-8zm-1 11H7v-2h2v-2h2v2h2v2h-2v2H9v-2z"/></svg></a>
+        <a href="adventure.html" class="nav-link mb-4" title="Adventure"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg></a>
+        <a href="tech.html" class="nav-link mb-4" title="Tech"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M13.5 2c-1.47 0-2.87.57-3.91 1.59L9 4.17l-.59-.58A5.5 5.5 0 002 8.5c0 1.47.57 2.87 1.59 3.91L9 17.83l5.41-5.42A5.5 5.5 0 0018 8.5a5.5 5.5 0 00-4.5-5.48z"/></svg></a>
+        <a href="culture.html" class="nav-link mb-4" title="Culture"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M13 7H7v6h6V7zm-3 2a1 1 0 110 2 1 1 0 010-2zm5-2h2v6h-2V7zm-8 0H5v6h2V7z"/></svg></a>
+        <a href="wildlife.html" class="nav-link mb-4" title="Wildlife"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4zm7-7a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1V5zm-2 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg></a>
+        <a href="education.html" class="nav-link mb-4" title="Education"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4v12h12V4H4zm2 2h8v2H6V6zm0 4h8v2H6v-2zm0 4h4v2H6v-2z"/></svg></a>
+        <a href="future.html" class="nav-link mb-4" title="Future"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M8 2v4l-4 2 4 2v4l6-6-6-6zm2 12v-4l4-2-4-2v-4l-6 6 6 6z"/></svg></a>
+        <a href="contact.html" class="nav-link active mb-4" title="Contact"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 3h10v2H5V8zm0 4h7v2H5v-2z"/></svg></a>
+    </nav>
+    <main class="container mx-auto py-8 pl-20 relative z-10">
+        <section class="hero relative bg-green-600 text-white p-12 rounded-lg mb-8 overflow-hidden">
+            <div class="hero-overlay absolute inset-0 bg-black opacity-20"></div>
+            <h2 class="text-5xl font-bold mb-4 relative z-10">Contact Joseph Onyango</h2>
+            <p class="text-lg relative z-10">Contact Me: Feel free to reach out to me for any inquiries or collaborations.</p>
+            <p class="text-lg relative z-10"><strong>Email:</strong> <a href="mailto:jesuspromisesmedia@gmail.com" class="underline">jesuspromisesmedia@gmail.com</a></p>
+            <p class="text-lg relative z-10"><strong>Phone:</strong> +254 101 710 049, +254 100 585 264</p>
+            <p class="text-lg relative z-10"><strong>Location:</strong> Nairobi, Kenya</p>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="contact1">
+                <h3 class="text-xl font-semibold">Email Contact</h3>
+                <p>Reach Joseph via email for inquiries.</p>
+                <p class="expandable hidden">Email Joseph Onyango at jesuspromisesmedia@gmail.com for questions, project ideas, or partnerships related to Kenya Explorer. Expect a response within 24-48 hours, as Joseph is committed to engaging with the community. This direct line ensures personalized communication, whether you’re a student, collaborator, or enthusiast. Your input helps enhance this educational platform. <span class="easter-egg hidden">Barua ni uhusiano!</span></p>
+                <a href="mailto:jesuspromisesmedia@gmail.com" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="contact2">
+                <h3 class="text-xl font-semibold">Phone Contact</h3>
+                <p>Call Joseph for direct communication.</p>
+                <p class="expandable hidden">Contact Joseph Onyango at +254 101 710 049 or +254 100 585 264 to discuss Kenya Explorer or potential collaborations. Available during Nairobi business hours (9 AM-5 PM EAT), Joseph welcomes calls from those passionate about Kenya’s heritage and future. These numbers ensure quick, personal engagement for urgent inquiries or project discussions. <span class="easter-egg hidden">Simu ni haraka!</span></p>
+                <a href="tel:+254101710049" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable easter-egg-flag" data-tilt data-id="contact3">
+                <h3 class="text-xl font-semibold">Social Media</h3>
+                <p>Follow Kenya Explorer on social platforms.</p>
+                <p class="expandable hidden">Join Joseph Onyango on social media to stay updated on Kenya Explorer’s latest content and events. Platforms like Twitter and Instagram (handles TBD) share insights into Kenya’s culture, tech, and more. Engage with posts, share your thoughts, and connect with a global community celebrating Kenya. Your interaction amplifies the project’s reach! <span class="easter-egg hidden">Mitandao ni dunia!</span></p>
+                <a href="https://twitter.com/" target="_blank" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="contact4">
+                <h3 class="text-xl font-semibold">Collaborations</h3>
+                <p>Partner with Joseph on exciting projects.</p>
+                <p class="expandable hidden">Joseph Onyango invites collaborations to expand Kenya Explorer’s impact. Whether you’re an educator, developer, or cultural enthusiast, your expertise can enhance this platform. Past partnerships have included schools and tech hubs in Nairobi. Reach out to co-create content, events, or tech features that celebrate Kenya’s heritage. <span class="easter-egg hidden">Ushirikiano ni nguvu!</span></p>
+                <a href="mailto:jesuspromisesmedia@gmail.com" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+            <article class="card bg-white p-6 rounded-lg shadow-lg tilt draggable" data-tilt data-id="contact5">
+                <h3 class="text-xl font-semibold">Feedback</h3>
+                <p>Share your thoughts to improve the project.</p>
+                <p class="expandable hidden">Your feedback is vital to making Kenya Explorer better. Joseph Onyango values suggestions on content, design, or new features. Whether you’re a user, educator, or visitor, your insights help tailor this platform to diverse audiences. Email or call to share ideas that can inspire and educate about Kenya’s vibrant heritage. <span class="easter-egg hidden">Maoni ni maendeleo!</span></p>
+                <a href="mailto:jesuspromisesmedia@gmail.com" class="expand-btn bg-red-600 text-white px-4 py-2 rounded inline-block">Learn More</a>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-black text-white text-center py-4 relative z-10">
+        <p>© 2025 Kenya Explorer. Karibu Tena!</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
