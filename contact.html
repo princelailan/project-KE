@@ -13,57 +13,58 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #333;
       display: flex;
-      min-height: 100vh;
-      background-color: #f4f4f4;
     }
 
-    /* Sidebar styles */
+    /* Sidebar Navigation */
     .sidebar {
-      width: 220px;
-      background-color: #333;
-      padding: 30px 20px;
-      color: #fff;
-      flex-shrink: 0;
-      position: sticky;
-      top: 0;
+      width: 200px;
+      background-color: #222;
       height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 30px;
     }
 
     .sidebar h2 {
-      font-size: 1.8rem;
-      margin-bottom: 30px;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
     }
 
-    .nav-links {
+    .nav-list {
       list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    .nav-links li {
-      margin: 15px 0;
+    .nav-list li {
+      margin: 10px 0;
     }
 
-    .nav-links a {
-      color: #fff;
+    .nav-list a {
+      color: white;
       text-decoration: none;
-      font-size: 1rem;
-      transition: background 0.3s, padding 0.3s;
       display: block;
-      padding: 8px 12px;
-      border-radius: 4px;
+      padding: 12px 20px;
+      transition: background 0.3s ease;
     }
 
-    .nav-links a:hover,
-    .nav-links a.active {
+    .nav-list a:hover,
+    .nav-list a.active {
       background-color: #007bff;
-      padding-left: 20px;
     }
 
-    /* Main content */
+    /* Main Content */
     .main-content {
+      margin-left: 200px;
+      padding: 40px 20px;
       flex: 1;
-      padding: 60px 40px;
     }
 
     .contact-info h2 {
@@ -90,41 +91,51 @@
       text-decoration: underline;
     }
 
+    .back-home .btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .back-home .btn:hover {
+      background-color: #0056b3;
+    }
+
     /* Footer */
     .footer {
+      margin-left: 200px;
       text-align: center;
       padding: 20px;
       background-color: #333;
       color: white;
-      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Sidebar Navigation -->
-  <aside class="sidebar">
-    <h2>Kenya Explorer</h2>
-    <ul class="nav-links">
-      <li><a href="README.md">README</a></li>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <h2>Explore KE</h2>
+    <ul class="nav-list">
       <li><a href="index.html">Home</a></li>
       <li><a href="adventure.html">Adventure</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
       <li><a href="culture.html">Culture</a></li>
       <li><a href="education.html">Education</a></li>
       <li><a href="future.html">Future</a></li>
       <li><a href="history.html">History</a></li>
       <li><a href="medical.html">Medical</a></li>
-      <li><a href="script.js">Script</a></li>
-      <li><a href="styles.css">Styles</a></li>
-      <li><a href="tech.html">Technology</a></li>
+      <li><a href="tech.html">Tech</a></li>
       <li><a href="wildlife.html">Wildlife</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-  </aside>
+  </nav>
 
-  <!-- Main Contact Section -->
-  <main class="main-content">
-    <section class="contact-info">
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="contact-info">
       <h2>Contact Me</h2>
       <p>Feel free to reach out to me for any inquiries or collaborations.</p>
 
@@ -134,12 +145,17 @@
         <p><strong>Phone:</strong> +254 100 585 264</p>
         <p><strong>Location:</strong> Nairobi, Kenya</p>
       </div>
-    </section>
 
-    <footer class="footer">
-      <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
-    </footer>
-  </main>
+      <div class="back-home">
+        <a href="index.html" class="btn">Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Kenya Explorer. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
