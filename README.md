@@ -46,22 +46,24 @@ On mobile, verify the sidebar collapses into a horizontal menu.
 
 Folder Structure
 kenya-explorer/
-├── index.html           # Home page
-├── history.html         # History page
-├── medical.html         # Medical page
-├── adventure.html       # Adventure page
-├── tech.html            # Tech page
-├── culture.html         # Culture page (7 cards)
-├── wildlife.html        # Wildlife page
-├── education.html       # Education page (7 cards)
-├── future.html          # Future page (7 cards)
-├── contact.html         # Contact page
-├── css/
-│   └── style.css        # Custom styles
-├── js/
-│   └── script.js        # Custom JavaScript
-└── README.md            # Project documentation
-Technologies Used
+
+ index.html           # Home page  
+ history.html         # History page
+ medical.html         # Medical page
+ adventure.html       # Adventure page
+ tech.html            # Tech page
+ culture.html         # Culture page (7 cards)
+ wildlife.html        # Wildlife page
+ education.html       # Education page (7 cards)
+ future.html          # Future page (7 cards)
+ contact.html         # Contact page
+ css/
+     style.css        # Custom styles
+ js/
+     script.js        # Custom JavaScript
+ README.md            # Project documentation
+ 
+**Technologies Used**
 
 HTML5: Page structure.
 Tailwind CSS (CDN): Responsive styling.
