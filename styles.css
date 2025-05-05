@@ -1,46 +1,82 @@
 body {
-    background: #f0f0f0;
+    background: #f3f4f6;
     overflow-x: hidden;
 }
+
 .parallax-bg {
-    background: url('https://via.placeholder.com/1920x1080?text=Kenyan+Landscape') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e') no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.3;
-    transform: translateZ(0);
+    opacity: 0.1;
+    z-index: -1;
 }
-#particles-js {
-    background: transparent;
+
+.sidebar {
+    transition: all 0.3s;
 }
-.sidebar .nav-link:hover, .sidebar .nav-link.active {
-    color: #f56565;
-}
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: move;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.expandable {
-    display: none;
-}
-.expandable.show {
-    display: block;
-}
-.easter-egg {
-    color: #f56565;
-    font-style: italic;
-}
+
 @media (max-width: 768px) {
     .sidebar {
         width: 100%;
         height: auto;
         flex-direction: row;
         justify-content: center;
-        position: static;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    .sidebar a {
+        margin: 0 0.5rem;
     }
     main {
-        padding-left: 0;
+        padding-left: 0 !important;
+        padding-top: 4rem;
     }
+}
+
+.nav-link:hover {
+    color: #f56565;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: move;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.expandable {
+    display: none;
+    margin-top: 1rem;
+    color: #4a5568;
+}
+
+.expand-btn {
+    transition: background-color 0.3s;
+}
+
+.expand-btn:hover {
+    background-color: #c53030;
+}
+
+.easter-egg {
+    font-style: italic;
+    color: #2f855a;
+}
+
+.hero-overlay {
+    z-index: 1;
+}
+
+.pulse {
+    transition: all 0.3s ease;
+}
+
+.pulse:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(245, 101, 101, 0.5);
 }
