@@ -1,5 +1,7 @@
 # Kenya Explorer
 
+https://princelailan.github.io/project-KE/
+
 ## Project Overview
 
 Kenya Explorer is a vibrant, interactive website showcasing Kenya’s rich heritage and bright future. From culture to technology, it celebrates the nation’s diversity across 42 tribes using a Kenyan-themed color palette (red, green, black, white) and engaging features like draggable cards and confetti animations. Built for enthusiasts and learners, it aims to educate and inspire with a responsive, user-friendly design.
